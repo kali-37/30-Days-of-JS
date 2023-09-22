@@ -19,3 +19,10 @@ Multiline comment
 1. first
 2. Second
 */
+
+/*
+
+To have live server just Change Directory to the folder and using python -m http.server 8000 
+ip addr show , to see ip address of your machine and then use that ip address with port 8000 to access the server from other devices within  the same network
+
+*/
