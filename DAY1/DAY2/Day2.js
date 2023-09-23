@@ -50,6 +50,6 @@ console.log('to write a backslash we do : \\')
 
 // Templates literals in javascript is same as python . 
 
-let name="John"
+let nameis="John"
 let age=23
-console.log(`Hello ${name} your age is ${age}`) // This is template literals in javascript
+console.log(`Hello ${nameis} your age is ${age}`) // This is template literals in javascript
