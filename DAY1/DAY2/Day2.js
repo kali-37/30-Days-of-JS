@@ -45,3 +45,11 @@ let lastname="DOE"
 let space=" " 
 console.log(firstname+space+lastname) // concatenation of strings
 
+console.log('\t hello') // \t is used to add tab space in the string with spaces of 8 characters where 
+console.log('to write a backslash we do : \\')
+
+// Templates literals in javascript is same as python . 
+
+let name="John"
+let age=23
+console.log(`Hello ${name} your age is ${age}`) // This is template literals in javascript
