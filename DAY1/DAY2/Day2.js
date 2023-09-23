@@ -53,3 +53,27 @@ console.log('to write a backslash we do : \\')
 let nameis="John"
 let age=23
 console.log(`Hello ${nameis} your age is ${age}`) // This is template literals in javascript
+
+
+let string="javascript"
+console.log(string.length)// returns length of the string
+console.log(string.toUpperCase()) // returns string in uppercase
+
+let country="NEPAL"
+console.log(country.toLowerCase())
+
+let stringer="javascript"
+console.log(stringer[0]) // returns first character of the string
+
+
+let sample="bhajangkobaag"
+console.log(sample.substr(0,7)) // returns substring from index 0 to 7
+console.log(sample.substring(0,7)) // returns substring from index 0 to 7
+
+let stringerer="abcdef"
+console.log(stringerer.split('')) // returns array of characters  a b c d e f
+console.log(stringerer.split(', ')) // returns array of characters  a b c d e f
+
+let forefathers =" we came here to learn javascript from fore fathers of javascript"
+console.log(forefathers.includes('javascript')) // returns true if javascript is present in the string
+console.log(forefathers.includes('python')) // returns false if python is not present in the string
