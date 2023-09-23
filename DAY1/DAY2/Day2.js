@@ -37,3 +37,11 @@ console.log(Math.floor(Math.random()*10)+1) // returns random number between 1 a
 // We do also have log in javascript MATH. 
 
 console.log(Math.log(2)) // returns log of 2 . 
+
+// we can concatenate strings in javascript using + operator
+
+let firstname="JOHN"
+let lastname="DOE"
+let space=" " 
+console.log(firstname+space+lastname) // concatenation of strings
+
