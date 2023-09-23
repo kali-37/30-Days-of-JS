@@ -15,4 +15,8 @@ console.log(word)
 
 let arr=[1,2,3,4,5] // This is an array and array is mutable
 let brr=[1,2,3,4,5]
-console.log(arr==brr)
+console.log(arr==brr) // prints false as both are different objects in memory so it dosen't work as other programming languages
+
+
+
+
