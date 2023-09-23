@@ -18,5 +18,22 @@ let brr=[1,2,3,4,5]
 console.log(arr==brr) // prints false as both are different objects in memory so it dosen't work as other programming languages
 
 
+// In javascript MATH Object is used to perform mathematical operations
 
+console.log(Math.PI) // prints PI value
+console.log(Math.E) // prints E value
+console.log(Math.round(2.4)) // rounds the value to nearest integer
+console.log(Math.ceil(2.4)) // rounds the value to nearest integer greater than the value
+console.log(Math.floor(2.4)) // rounds the value to nearest integer smaller than the value
+console.log(Math.abs(-2.4)) // returns absolute value of the number
+console.log(Math.pow(2,3)) // returns 2 to the power 3
+console.log(Math.sqrt(4)) // returns square root of the number
+console.log(Math.min(2,3,4,5,6,7,8,9,1)) // returns minimum value from the list of numbers
+console.log(Math.max(2,3,4,5,6,7,8,9,1)) // returns maximum value from the list of numbers
+console.log(Math.random()) // returns random number between 0 and 1
+console.log(Math.floor(Math.random()*10)) // returns random number between 0 and 10 
+console.log(Math.floor(Math.random()*10)+1) // returns random number between 1 and 10
 
+// We do also have log in javascript MATH. 
+
+console.log(Math.log(2)) // returns log of 2 . 
