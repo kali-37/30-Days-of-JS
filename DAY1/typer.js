@@ -4,11 +4,11 @@ const PI=3.14
 
 age="23"
 myage="30"
-console.log("\nYour  "+age+ " years old")
+console.log("\n Your  "+age+ " years old")
 
 
 // myage is 
-console.log("\nmyage is "+myage)
+console.log("\n myage is "+myage)
 
 console.log(typeof stringer,typeof gravity,typeof PI ) // typeof ..
 
