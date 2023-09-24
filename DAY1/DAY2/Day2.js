@@ -129,6 +129,12 @@ console.log(typeof numInt) // number
 const sentences = "You cannot end a sentence with because because because is a conjunction"
 const startingIndex = sentences.indexOf("b")
 const endingIndex = sentences.lastIndexOf("e") + 1
-const phrase = sentences.substr(startingIndex, endingIndex - startingIndex)
+const phrase = sentences.substr(startingIndex, endingIndex - startingIndex)// it actually returns substring from starting index to ending index
+
 
 console.log(phrase); // "because because because"0
+
+
+
+const sent = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+console.log(concat(sent.match(/[^%&$@#]/g))) // returns number of special characters in the string
