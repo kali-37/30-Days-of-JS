@@ -137,4 +137,7 @@ console.log(phrase); // "because because because"0
 
 
 const sent = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-console.log(concat(sent.match(/[^%&$@#]/g))) // returns number of special characters in the string
+const removed=(sent.match(/[^%&$@#]/g)) // returns number of special characters in the string
+
+// in javascript concatinating string from list of strings is done using join method
+console.log(removed.join('')) // returns string without special characters
