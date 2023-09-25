@@ -141,3 +141,17 @@ const removed=(sent.match(/[^%&$@#]/g)) // returns number of special characters 
 
 // in javascript concatinating string from list of strings is done using join method
 console.log(removed.join('')) // returns string without special characters
+
+
+// Calculate the total annual income of the person by extracting the numbers from the following text. 
+
+const extracter='He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+const extracted=extracter.match(/\d+/g)
+// adding all the elements on string can be done by below method. 
+totalIncome=0
+if (extracted){
+    for (const number of extracted){
+        totalIncome+=parseInt(number);
+    }
+}
+console.log(totalIncome)
