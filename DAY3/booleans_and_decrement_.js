@@ -22,3 +22,5 @@ const agree=confirm ('Are you sure you want to delete ?')
 console.log(agree) // returns true if ok is pressed and false if cancel is pressed.
 
 
+
+
