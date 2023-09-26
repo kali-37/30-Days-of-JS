@@ -16,7 +16,9 @@ number>0 ? console.log('number is positive  '+number ):console.log('number is ne
 alert('Welocome to 30 days of Javascript ')
 
 // Prompt takes two arguments , but second argument is optional 
-
 prompt('required text', 'optional text')
+
+const agree=confirm ('Are you sure you want to delete ?')
+console.log(agree) // returns true if ok is pressed and false if cancel is pressed.
 
 
