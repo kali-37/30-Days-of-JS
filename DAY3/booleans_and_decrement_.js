@@ -21,6 +21,8 @@ prompt('required text', 'optional text')
 const agree=confirm ('Are you sure you want to delete ?')
 console.log(agree) // returns true if ok is pressed and false if cancel is pressed.
 
-
-
+console.log(4!='4') // returns false as it only checks the value not the type of the variable.
+let a = 4
+let b='4'
+console.log(a==b) // returns true as it only checks the value not the type of the variable.
 
