@@ -149,6 +149,7 @@ console.log(removed.join('')) // returns string without special characters
 const extracter='He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 const extracted=extracter.match(/\d+/g)
 // adding all the elements on string can be done by below method. 
+console.log(parseInt(extracted[1]))
 totalIncome=0
 if (extracted){
     for (const number of extracted){
