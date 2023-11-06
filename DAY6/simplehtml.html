@@ -4,7 +4,7 @@
 </head>
 <title> learning </title>
 <body> 
-<!-- <div id="countryList"></div> -->
+<div id="countryList"></div>
 <script>
 const countries = [
     'Afghanistan',
@@ -210,10 +210,11 @@ for (const country of countries){
 console.log("Here are the countries with land within theri names ");
 console.log(newArray);
 const CountryDiv=document.getElementById("countryList");
-newArray.forEach((country) => {
-    const h1=document.createElement("h1");
-    h1.textContent=country;
+newArray.forEach((countrys) => {
+    let h1=document.createElement("h1");
+    h1.textContent=countrys;
     CountryDiv.appendChild(h1);
 });
 </script>
 </body>
+</html>
