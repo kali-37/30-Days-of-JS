@@ -1,46 +1,11 @@
-// Print in patter i , i sq i cube 
-
-for (let i=0;i<11 ;i++){
-    console.log(`${i}   ${i*i}   ${i*i*i} `)
-
-}
-// HEx representation of random order . 
-const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-let randomId = "";
-for (let i=0;i<6;i++){
-number_randomizer=(Math.floor(Math.random()*characters.length))
-randomId +=characters[number_randomizer];
-}
-console.log("#"+randomId );
-
-
-// Write a script which generates a random rgb color number.
-
-
-// rgb(240,180,80)
-
-function rgb() {
-    var red=Math.floor(Math.random()*256);
-    var green=Math.floor(Math.random()*256);
-    var blue=Math.floor(Math.random()*256);
-    return "rgb("+ red + "," + green + "," + blue + ")";
-} 
-var randomRGB= rgb();
-console.log(randomRGB);
-const fullStack = [
-    ['HTML', 'CSS', 'JS', 'React'],
-    ['Node', 'Express', 'MongoDB']
-  ]
-// Print the elements of fullstack array one by one using for loop
-
-for (let i=0;i<fullStack.length;i++){
-    for (let j=0;j<fullStack[i].length;j++){
-        console.log(fullStack[i][j]);
-    }
-}
-
-// Extract all the countries taht contain the word 'land ' from the coutnries array and print it as array
-
+<!DOCTYPE html>
+<head>
+    Hello 
+</head>
+<title> learning </title>
+<body> 
+<!-- <div id="countryList"></div> -->
+<script>
 const countries = [
     'Afghanistan',
     'Albania',
@@ -235,16 +200,20 @@ const countries = [
     'Yemen',
     'Zambia',
     'Zimbabwe'
-  ]
-
-
+  ];
 const newArray=[];
-
-for (const country of  countries){
+for (const country of countries){
     if (country.includes("land")){
-        // console.log(country);
         newArray.push(country);
     }
 }
-console.log("Here we go country with land within the name \n\n");
+console.log("Here are the countries with land within theri names ");
 console.log(newArray);
+const CountryDiv=document.getElementById("countryList");
+newArray.forEach((country) => {
+    const h1=document.createElement("h1");
+    h1.textContent=country;
+    CountryDiv.appendChild(h1);
+});
+</script>
+</body>
