@@ -99,7 +99,7 @@ const users = {
 
 //   Find the person who has many skills in the users object.
 let greatest=0;
-let answer="";
+let answer=null;
 for (const elems in  users ){ // 
    if( users[elems].skills.length > greatest){
         greatest=users[elems].skills.length;
@@ -107,3 +107,7 @@ for (const elems in  users ){ //
    } 
 }
 console.log(` the answer is ${answer}`)
+
+
+
+
