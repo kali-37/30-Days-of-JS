@@ -4,11 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Page Title</title>
-  <link rel="stylesheet" href="./_styles.css">
+  <!-- <link rel="stylesheet" href="./_styles.css"> -->
 </head>
 <body>
+  <div class="wrapper">
   <h1 class="title_topic">Asabeneh Yetayeh challenges in</h1>
   <h1 id="Thulo_font">2020</h1>
-  <a href="#">30DaysOfJavaScriptChallenge</a>
+  <h2 id="javascript_challange">30DaysOfJavaScriptChallenge</h2>
+  <p></p>
+  <ul>
+    <li>30DaysOfPython Challenge Done</li>
+    <li>30DaysOfJavaScript Challenge Ongoing</li>
+    <li>30DaysOfReact Challenge Coming</li>
+    <li>30DaysOfFullStack Challenge Coming</li>
+    <li>30DaysOfDataAnalysis Challenge Coming</li>
+    <li>30DaysOfReactNative Challenge Coming</li>
+    <li>30DaysOfMachineLearning Challenge Coming</li>
+  </ul>
+</div>
 </body>
 </html>
+
+<script>
+  const wrapper=document.querySelectorAll('.wrapper');
+  console.log("wrapper",wrapper)
+  if (wrapper){
+  wrapper.forEach(element => {
+  element.style.textAlign='center';
+  });
+  }
+  const _ul=document.querySelector('ul');
+  console.log("UL",_ul) ;
+  if(_ul){
+    _ul.style.display='grid';
+    _ul.style.listStyle='none';
+    _ul.style.justifyContent='center';
+    _ul.style.justifyItems='start';
+    _ul.style.margin='0';
+    _ul.style.padding='0';
+  }
+    if(_title_topic=document.querySelector('.title_topic')){
+   _title_topic.style.display='inline';
+  }
+  let thuloFontElement=document.getElementById('Thulo_font')
+  let p=document.querySelector('p');
+  p.textContent = Date();
+  p.style.border = "solid"
+  p.style.width = "300px";
+  p.style.textAlign='center';
+  if (thuloFontElement) {
+  const primary_colors = ['blue', 'green', 'orange', 'red'];
+  //  async function changeColor() {
+  //   for (let i = 0; i < primary_colors.length; i++) {
+  //     await new Promise(resolve=> setTimeout(resolve,1000));
+  //     thuloFontElement.style.color = primary_colors[i];
+  //   }
+  //   changeColor();
+  // }
+    index=0;
+    const loop=setInterval(()=>{
+     if (index===primary_colors.length) index=0 ;
+     thuloFontElement.style.color=(primary_colors[index++]) 
+     p.style.backgroundColor=primary_colors[index];
+    },1000)
+
+  // changeColor();
+  console.log(loop)
+  thuloFontElement.style.fontSize='50px';
+  thuloFontElement.style.display = 'inline';
+  console.log("aayo hai aayoo")
+  }
+  let _li=document.querySelectorAll('li');
+  console.log(_li)
+  _li.forEach(element => {
+    // element.style.boxsizing='border-box'; 
+    element.style.width='500px'
+    element.style.display='inline-block'
+    element.style.padding='10px'
+    element.style.margin='5px'
+
+
+    if ((element.innerText).includes('Done')) element.style.backgroundColor='#00EE00';
+    if (element.innerText.includes('Ongoing')) element.style.backgroundColor='#EEEE00';
+    if (element.innerText.includes('Coming')) element.style.backgroundColor='#BB0000';
+  });
+
+
+
+</script> 
