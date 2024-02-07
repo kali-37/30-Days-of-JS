@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "utf-8" lang="en">
+<title>
+    World Countries List
+</title>
+</head>
+<body>
+
+    <div class="world_image">
+    <img src="img/template.png" alt="Image not found "> 
+    </div>
+    <div class="text-block">
+        WORLD COUNTRIES LIST
+        <div id="total_countries"> Total number of countries :</div>
+        <div id="starting_with" ></div>
+    <div class="buttons">
+    <button>
+    <h3>Starting word </h3>      
+    </button>
+    <button>
+    <h3> Search with my word </h3>
+    </button>
+    <button id="enter_wallah">
+        <div id="vertical">
+            <div class="arrow"></div>
+             <div class="arrow_length">|</div>
+         </div>
+        <div id="vertical az">
+        <h5>A</h5>
+        <h5>Z</h5>
+        </div>
+    </button>
+  </div>
+    </div>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+#vertical\ az {
+    padding-left :0.28vw;
+}
+#enter_wallah {
+    display:flex;
+    flex-direction:row;
+
+}
+#enter_wallah > #vertical > .arrow_length {
+    font-weight:bold;
+    font-size:1rem;
+    padding-top:0.33vw;
+    padding-left:0.3vw;
+}
+
+#enter_wallah > #vertical > .arrow {
+    position:absolute;
+    height:0;
+    width:0;
+    border-left: 0.5vw solid transparent;
+    border-right:0.5vw solid transparent;
+    border-bottom:0.5vw solid white;
+}
+
+
+img {
+        width:120%;
+        height:58vh;
+        /* display:block; */
+        position:absolute;
+        z-index:-2;
+    }
+    .text-block {
+        /* font-size :clamp(2rem,5vw,3rem);
+         */
+        font-size:5vw;
+        font-weight:bolder;
+        position:absolute;
+        left: 22%;
+        top:7%;
+        /* text-align: center ;*/
+        /* transform : translateX(-50%); */
+    }
+    
+    .buttons {
+        display:flex;
+        position:relative;
+        left:28%;
+    }
+    button {
+        padding:0.8vw 0.8vw;
+        color:white;         
+        background-color:purple;
+        display:inline;
+    }
+
+    #total_countries {
+        font-size:22px; 
+        backdrop-filter:blur(1px);
+        text-align:center;
+        
+    }
+    .text-block::before{
+        z-index:-1;
+        content:"WORLD COUNTRIES LIST";
+        position:absolute;
+        font-weight:bolder;
+        transform:translate(-1%,-3%);
+        color:transparent;
+        color:hsl(235.9deg 3.76% 16.84% / 0%);
+        -webkit-text-stroke-color:#000;
+        -webkit-text-stroke-width: 0.2px;
+}
+    
+    </style>
+</body>
+</html>
+
+
+<script>
+    async function fetchData(file_name){
+    try{    
+        response = await fetch(file_name);
+        json_data=await response.json();
+        return json_data;
+        }catch(error){
+            return error;
+        }
+    }
+    async function main(){
+    json_data=await fetchData('world.json');
+    console.log(json_data.length)
+    const _total_countries=document.querySelector('#total_countries');
+    _total_countries.textContent+=json_data.length;
+    }
+    
+    main();
+
+</script>

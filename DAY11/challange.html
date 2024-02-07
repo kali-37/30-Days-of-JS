@@ -15,7 +15,7 @@
   <ul>
     <li>30DaysOfPython Challenge Done</li>
     <li>30DaysOfJavaScript Challenge Ongoing</li>
-    <li>30DaysOfReact Challenge Coming</li>
+  <li>30DaysOfReact Challenge Coming</li>
     <li>30DaysOfFullStack Challenge Coming</li>
     <li>30DaysOfDataAnalysis Challenge Coming</li>
     <li>30DaysOfReactNative Challenge Coming</li>
@@ -51,7 +51,9 @@
   p.textContent = Date();
   p.style.border = "solid"
   p.style.width = "300px";
-  p.style.textAlign='center';
+  // p.style.textAlign='center';
+  p.style.display='inline block'
+  p.style.margin='0 auto '
   if (thuloFontElement) {
   const primary_colors = ['blue', 'green', 'orange', 'red'];
   //  async function changeColor() {
@@ -60,7 +62,6 @@
   //     thuloFontElement.style.color = primary_colors[i];
   //   }
   //   changeColor();
-  // }
     index=0;
     const loop=setInterval(()=>{
      if (index===primary_colors.length) index=0 ;
